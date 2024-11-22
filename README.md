@@ -36,3 +36,7 @@ $streamHandler->setFormatter(new \PlentyMarkets\Logger\Formatter\JsonFormatter()
 $logger = new \PlentyMarkets\Logger\Logger([$streamHandler]);
 $logger->info('Hello World');
 ```
+
+### UML
+
+![UML Diagram](docs/logging_package_uml.png)
