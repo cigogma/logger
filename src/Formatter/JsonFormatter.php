@@ -15,7 +15,7 @@ class JsonFormatter implements FormatterInterface
      */
     public function format(LogRecord $record): string
     {
-        return json_encode($this->mapFields($record->toArray()));
+        return json_encode($this->mapFields($record->toArray()))."\n";
     }
 
     /**

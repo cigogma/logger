@@ -21,6 +21,10 @@ enum LogLevel: int
             $stringLevel = strtoupper($level->__toString());
             $level = static::{$stringLevel};
         }
+        if(is_string($level)){
+            $stringLevel = strtoupper($level);
+            $level = static::{$stringLevel};
+        }
         if($level instanceof LogLevel){
             return $level;
         }
